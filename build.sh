@@ -1,1 +1,1 @@
-docker build . --tag google_stt
+docker build . --tag format37/google_stt
