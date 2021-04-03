@@ -4,7 +4,7 @@ from google.cloud import speech_v1p1beta1
 
 
 def transcribe_google(language, file_path):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = 'stt_google.json'
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = '/mounted/stt_google.json'
     # language = 'ru'
     client = speech_v1p1beta1.SpeechClient()
     sample_rate_hertz = 8000
@@ -28,7 +28,7 @@ def transcribe_google(language, file_path):
 
 
 def main():
-    transcribation = transcribe_google('ru', 'example.wav')
+    transcribation = transcribe_google('ru', 'mounted/example.wav')
     print(transcribation)
 
 
