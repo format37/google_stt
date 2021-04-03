@@ -1,2 +1,2 @@
 # google_stt
-google speech to text docker
+google speech to text docker image builder
